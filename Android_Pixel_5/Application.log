@@ -1,0 +1,9 @@
+[Android_Pixel_5 INFO ] 2025-09-23 22:30:35.019 DriverManager:30 - Initializing Appium driver for platform: Android
+[Android_Pixel_5 INFO ] 2025-09-23 22:30:35.029 DriverManager:34 - Server URL: http://127.0.0.1:4723
+[Android_Pixel_5 INFO ] 2025-09-23 22:30:35.030 PropertyManager:17 - loading config properties
+[Android_Pixel_5 INFO ] 2025-09-23 22:30:35.031 CapabilitiesManager:18 - getting capabilities
+[Android_Pixel_5 INFO ] 2025-09-23 22:30:35.034 CapabilitiesManager:39 - appUrl is /Users/bytedance/IdeaProjects/UI-Test-Stockbit/src/test/resources/apps/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+[Android_Pixel_5 INFO ] 2025-09-23 22:30:35.035 CapabilitiesManager:58 - Final capabilities: Capabilities {appium:app: /Users/bytedance/IdeaProjec..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:chromeDriverPort: 9222, appium:deviceName: Pixel_5, appium:systemPort: 10000, appium:udid: emulator-5554, platformName: ANDROID}
+[Android_Pixel_5 INFO ] 2025-09-23 22:30:35.036 DriverManager:38 - Capabilities: Capabilities {appium:app: /Users/bytedance/IdeaProjec..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:chromeDriverPort: 9222, appium:deviceName: Pixel_5, appium:systemPort: 10000, appium:udid: emulator-5554, platformName: ANDROID}
+[Android_Pixel_5 INFO ] 2025-09-23 22:30:35.036 DriverManager:42 - Creating AndroidDriver...
+[Android_Pixel_5 INFO ] 2025-09-23 22:30:48.444 DriverManager:57 - Driver initialized successfully

@@ -1,1 +1,4 @@
 target
+# Ignore logs and videos for Pixel 5
+Android_Pixel_5/Application.log
+Android_Pixel_5/Videos/

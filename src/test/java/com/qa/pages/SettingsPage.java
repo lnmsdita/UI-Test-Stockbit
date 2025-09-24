@@ -8,12 +8,11 @@ import org.openqa.selenium.WebElement;
 public class SettingsPage extends BasePage {
 	TestUtils utils = new TestUtils();
 	
-	@AndroidFindBy (accessibility="test-LOGOUT") 
-	@iOSXCUITFindBy (id = "test-LOGOUT")
-	private WebElement logoutBtn;
+	@AndroidFindBy (xpath="//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/itemTV\" and @text=\"Log In\"]")
+	private WebElement loginButton;
 	
-	public LoginPage pressLogoutBtn() {
-		click(logoutBtn, "press Logout button");
+	public LoginPage pressLoginBtn() {
+		click(loginButton, "press login button");
 		return new LoginPage();
 	}
 

@@ -40,7 +40,8 @@ public class CapabilitiesManager {
                     caps.setCapability("appium:app", androidAppUrl);
                     break;
 
-                case "iOS":
+                /*
+                    case "iOS":
                     // Add appium: prefix to Appium-specific capabilities
                     caps.setCapability("appium:automationName", props.getProperty("iOSAutomationName"));
                     caps.setCapability("appium:bundleId", props.getProperty("iOSBundleId"));
@@ -52,6 +53,8 @@ public class CapabilitiesManager {
                     utils.log().info("appUrl is " + iOSAppUrl);
                     caps.setCapability("appium:app", iOSAppUrl);
                     break;
+
+                 */
             }
 
             // Ensure clean capabilities without duplicates

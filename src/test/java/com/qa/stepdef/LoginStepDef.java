@@ -1,7 +1,9 @@
 package com.qa.stepdef;
 
 import com.qa.pages.LoginPage;
+import com.qa.pages.MenuPage;
 import com.qa.pages.ProductsPage;
+import com.qa.pages.SettingsPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -10,6 +12,8 @@ public class LoginStepDef {
 
     @When("I enter username as {string}")
     public void iEnterUsernameAs(String username) throws InterruptedException {
+        new MenuPage().pressBurgerButton();
+        new SettingsPage().pressLoginBtn();
         new LoginPage().enterUserName(username);
     }
 
@@ -21,11 +25,6 @@ public class LoginStepDef {
     @When("I login")
     public void iLogin() {
         new LoginPage().pressLoginBtn();
-    }
-
-    @Then("login should fail with an error {string}")
-    public void loginShouldFailWithAnError(String err) {
-        Assert.assertEquals(new LoginPage().getErrTxt(), err);
     }
 
     @Then("I should see Products page with title {string}")

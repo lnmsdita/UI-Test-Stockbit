@@ -8,21 +8,14 @@ import org.openqa.selenium.WebElement;
 public class LoginPage extends BasePage {
 	TestUtils utils = new TestUtils();
 
-	@AndroidFindBy (accessibility = "test-Username") 
-	@iOSXCUITFindBy (id = "test-Username")
+    @AndroidFindBy (id = "com.saucelabs.mydemoapp.android:id/nameET")
 	private WebElement usernameTxtFld;
 
-	@AndroidFindBy (accessibility = "test-Password") 
-	@iOSXCUITFindBy (id = "test-Password")
+	@AndroidFindBy (id = "com.saucelabs.mydemoapp.android:id/passwordET")
 	private WebElement passwordTxtFld;
 	
-	@AndroidFindBy (accessibility = "test-LOGIN") 
-	@iOSXCUITFindBy (id = "test-LOGIN")
+	@AndroidFindBy (id = "com.saucelabs.mydemoapp.android:id/loginBtn")
 	private WebElement loginBtn;
-	
-	@AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView") 
-	@iOSXCUITFindBy (xpath = "//XCUIElementTypeOther[@name=\"test-Error message\"]/child::XCUIElementTypeStaticText")
-	private WebElement errTxt;
 
 	public LoginPage(){
 	}
@@ -48,11 +41,6 @@ public ProductsPage login(String username, String password) throws InterruptedEx
 	enterUserName(username);
 	enterPassword(password);
 	return pressLoginBtn();
-}
-
-public String getErrTxt() {
-	String err = getText(errTxt, "error text is - ");
-	return err;
 }
 
 }
